@@ -26,12 +26,32 @@ import java.io.Serializable;
  * MAVEN； 协做开发
  *
  */
+
 public class User implements Serializable {
 
     private String user;
 
+
+    private String height;
+
     public void doSomething(){
 
         System.out.println("I do something");
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+
+    public void setHeight(String height) {
+        this.height = height;
     }
 }
